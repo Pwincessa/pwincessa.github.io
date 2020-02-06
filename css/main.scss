@@ -436,11 +436,4 @@ main{
             height: 100%;
         }
 }
-
-.head-img{
-    @include responsive(phone){
-        display: none;
-    }
-    
-}
     
