@@ -1,0 +1,7 @@
+html{
+    @include responsive(phone){
+        .head-img{
+            display: none;
+        }
+    }
+}
