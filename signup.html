@@ -1,0 +1,70 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>sign up</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+    <div class="container"> 
+        <div class="head-text">
+            <h2>Sign up</h2>
+        </div>
+        <form class="form" id="form">
+                <div class="form-control success">
+                    <label>Username</label>
+                    <input type="text" placeholder="Jane Doe" id="username" required maxlength="20">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+
+            <div class="form-control error">
+                    <label>Email</label>
+                    <input type="email" placeholder="Hello@Jane.com" id="email" required>
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                    <label>Password</label>
+                    <input type="password" placeholder="Password" id="password">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                    <label>Phone number</label>
+                    <input type="tel" placeholder="090776578" id="phone" required maxlength="13">
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+            </div>
+
+            <div class="form-control">
+                    <label>Sex</label> <br>
+                    <input type="radio" id="Sex">
+                    <label for="Female">Female</label> <br>
+                    <input type="radio" id="Sex">
+                    <label for="Male">Male</label>
+                    <i class="far fa-check-circle"></i>
+                    <i class="fas fa-exclamation-circle"></i>
+                    <small>Error message</small>
+                </div>
+                <div class="form-control">
+                <input type="submit" id="Submit" class="button">
+                </div>
+        </form>
+    
+
+    </div>
+</body>
+<footer>
+    <script src="https://kit.fontawesome.com/696f999151.js" crossorigin="anonymous"></script>
+    <script src="js/signup.js"></script>
+</footer>
+
+</html>
