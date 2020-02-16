@@ -4,9 +4,9 @@
 }
 
 body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
   background-image: -webkit-gradient(linear, left bottom, right top, from(#68147a), color-stop(#6b3894), color-stop(#6d54ab), color-stop(#716ec0), color-stop(#7787d2), color-stop(#7e8fdf), color-stop(#8597eb), color-stop(#8c9ff8), color-stop(#9b95ff), color-stop(#b088ff), color-stop(#cb77ff), to(#e75ffb));
   background-image: linear-gradient(to right top, #68147a, #6b3894, #6d54ab, #716ec0, #7787d2, #7e8fdf, #8597eb, #8c9ff8, #9b95ff, #b088ff, #cb77ff, #e75ffb);
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,26 +17,27 @@ body {
       -ms-flex-pack: center;
           justify-content: center;
   min-height: 100vh;
-  margin: 0px;
+  margin: 0;
 }
 
 .container {
   background-color: #fff;
-  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0);
   border-radius: 5px;
-  max-width: 100%;
+  -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
   width: 400px;
+  max-width: 100%;
 }
 
-.head-text {
-  background-color: #f7f7f7;
+.header {
   border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
   padding: 20px 40px;
 }
 
-.head-text h2 {
-  margin: 0px;
+.header h2 {
+  margin: 0;
 }
 
 .form {
@@ -58,17 +59,30 @@ body {
   border: 2px solid #f0f0f0;
   border-radius: 4px;
   display: block;
-  width: 100%;
-  padding: 10px;
-  font-size: 14px;
   font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
 }
 
 .form-control i {
+  visibility: hidden;
   position: absolute;
   top: 40px;
   right: 10px;
-  visibility: hidden;
 }
 
 .form-control.success i.fa-check-circle {
@@ -93,28 +107,16 @@ body {
   visibility: visible;
 }
 
-.form-control input:focus {
-  outline: 0;
-  border-color: #777;
-}
-
-.form-control.success input {
-  border-color: #2ecc71;
-}
-
-.form-control.error input {
-  border-color: #e74c3c;
-}
-
-.button {
-  background-color: #86A8E7;
-  color: #fff;
-  border-radius: 4px;
-  width: 100%;
+.form button {
+  background-color: #8e44ad;
   border: 2px solid #8e44ad;
-  font-size: 18px;
-  font-family: inherit;
+  border-radius: 4px;
+  color: #fff;
   display: block;
+  font-family: inherit;
+  font-size: 16px;
   padding: 10px;
+  margin-top: 20px;
+  width: 100%;
 }
 /*# sourceMappingURL=signup.css.map */
