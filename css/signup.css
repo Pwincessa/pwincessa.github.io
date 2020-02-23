@@ -119,4 +119,11 @@ body {
   margin-top: 20px;
   width: 100%;
 }
+
+.loginpage {
+  text-decoration: none;
+  margin-left: 5%;
+  padding: 10px;
+  font-weight: bold;
+}
 /*# sourceMappingURL=signup.css.map */
