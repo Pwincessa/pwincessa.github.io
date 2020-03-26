@@ -1,0 +1,22 @@
+localStorage.setItem("TODO", JSON.stringify(LIST));
+
+let LIST, id;
+ // get item from local storage
+
+let data = localStorage.getItem("TODO");
+
+if (data){
+    LIST = JSON.parse(data);
+    id= LIST.length;
+    loadList(LIST); 
+}
+else{
+    LIST = [];
+    id = 0;
+}
+
+function loadList(array){
+    array.forEach(function(item) {
+        addToDo(item.name, item.id, item.done, item.trash);
+    });
+}
